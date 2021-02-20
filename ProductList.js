@@ -44,7 +44,7 @@ function displayItems(arrayOfItems){
     document.getElementById("content-contain").innerHTML="";
     for (i in arrayOfItems){
         document.getElementById("content-contain").innerHTML +=
-            '<div class = "card"> <a href="productPage.html"><div class = "item-description">' + arrayOfItems[i].name + '</div><img class="item-img" src = "' + arrayOfItems[i].url + '"><div class="item-description">$' +  arrayOfItems[i].price + '</div></a></div>';
+            '<div class = "card"> <a href="ProductPage.html"><div class = "item-description">' + arrayOfItems[i].name + '</div><img class="item-img" src = "' + arrayOfItems[i].url + '"><div class="item-description">$' +  arrayOfItems[i].price + '</div></a></div>';
 
     }
 }
