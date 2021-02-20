@@ -1,0 +1,128 @@
+.navigation{
+    flex: 0 0 150px;
+    min-height: 100%;
+    font-size: 2rem;
+    margin-top:12% ;
+}
+.app-container{
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+
+}
+
+.content-contain{
+    width:1024px;
+    margin:auto;
+    padding:30px;
+    display:flex;
+    flex: 1 1 auto;
+    flex-wrap:wrap;
+    align-content: center;
+
+
+}
+.details{
+    width:1024px;
+    margin-top: 10%;
+    padding:30px;
+    display:flex;
+    flex: 1 1 auto;
+    flex-wrap:wrap;
+    align-content: center;
+}
+.details p{
+    font-size: 2rem;
+}
+
+
+.content-contain .card{
+    height: 195px;
+    flex: 0 0 195px;
+    background-color: gainsboro;
+    margin: 10px;
+    border: 5px;
+    box-shadow: 0 4px 4px 0 grey;
+
+}
+
+
+.content-contain .card a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+
+.item-description{
+    width:inherit;
+    height:20px;
+    text-align: center;
+}
+
+.item-img{
+    height: 70%;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.details .img-wrapper img{
+    width: 400px;
+    height:200px;
+}
+.details .productDetails button{
+    background-color: yellowgreen;
+    -webkit-margin-top-collapse: inherit;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .app-container {
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .navigation {
+        min-height: auto;
+        flex: 0 0 35px;
+    }
+
+    .navigation a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .app-container {
+        width: 720px;
+    }
+
+    .content-contain .card {
+        flex-basis: 330px;
+        height: 330px;
+    }
+}
+
+
+@media only screen and (max-width: 749px) {
+    .app-container {
+        margin: 0 15px;
+        width: calc(100% - 60px);
+    }
+
+    .content-contain {
+        width: calc(100% - 50px);
+    }
+
+    .content-contain .card {
+        height: 50%;
+        flex-basis: 100%;
+        margin-right: auto;
+        margin-left:auto;
+    }
+}
